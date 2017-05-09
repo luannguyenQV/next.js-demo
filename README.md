@@ -1,0 +1,14 @@
+Demo for next.js project:
+- [x] Server rendering with express js
+- [x] Dynamic page
+- [ ] Integrate postCSS
+- [ ] Integrate Redux, use: `next-redux-wrapper`
+- [ ] Integrate Redux-Saga
+- [ ] Todo App
+- [ ] Fetch API using isomorphic-unfetch
+- [ ] Integrate firebase
+- [ ] Login/Logout
+- [ ] reselect
+- [ ] axios vs isomorphic-unfetch
+- [ ] Ract form
+- [ ] Deploy in now
