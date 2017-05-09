@@ -1,5 +1,7 @@
 import Link from 'next/link'
+import Head from 'next/head'
 import {defaultPage} from '../src/common/hocs/defaultPage'
+import stylesheet from '../src/common/styles/styles.css'
 
 const PostLink = (props) => (
   <li>
@@ -11,6 +13,7 @@ const PostLink = (props) => (
 
 const Page = () => (
   <div>
+    <style dangerouslySetInnerHTML={{ __html: stylesheet }} />
     <h1>My Blog</h1>
     <ul>
       <PostLink id="hello-nextjs" title="Hello Next.js"/>
