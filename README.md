@@ -1,16 +1,15 @@
 Demo for next.js project:
-- [x] Server rendering with express js
+- [x] Customer server express.js
 - [x] Dynamic page
-- [x] Integrate postCSS
+- [x] Integrated postCSS
 - [ ] Add standard js (lint/fix)
 - [ ] Integrate Redux
 - [ ] Integrate Redux-Saga
-- [ ] Todo App
-- [ ] Fetch API using isomorphic-unfetch
-- [ ] Integrate firebase
+- [ ] Integrate Redux-Form
+- [ ] Research & apply reselect for Todo App
+- [ ] Todo App (CRUD todo list)
+- [ ] Fetch API using isomorphic-unfetch/axios
+- [ ] Research & Integrate firebase
 - [ ] Login/Logout
-- [ ] Social Login
-- [ ] reselect
-- [ ] axios vs isomorphic-unfetch
-- [ ] Ract form
+- [ ] Social Login (facebook/google/twitter)
 - [ ] Deploy in now
