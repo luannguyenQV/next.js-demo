@@ -1,26 +1,27 @@
+import React, { Component } from 'react'
 import Link from 'next/link'
 import Head from 'next/head'
-import {defaultPage} from '../src/common/hocs/defaultPage'
+import todoReducer from '../src/modules/index/reducer'
+import { defaultPage } from '../src/common/hocs/defaultPage'
+import TodoList from '../src/modules/index/containers/TodoList'
+import AddTodo from '../src/modules/index/containers/AddTodo'
 import stylesheet from '../src/common/styles/styles.css'
 
-const PostLink = (props) => (
-  <li>
-    <Link as={`/p/${props.id}`} href={`/post?title=${props.title}`}>
-      <a>{props.title}</a>
-    </Link>
-  </li>
-)
+class Page extends Component {
 
-const Page = () => (
-  <div>
-    <style dangerouslySetInnerHTML={{ __html: stylesheet }} />
-    <h1>My Blog</h1>
-    <ul>
-      <PostLink id="hello-nextjs" title="Hello Next.js"/>
-      <PostLink id="learn-nextjs" title="Learn Next.js is awesome"/>
-      <PostLink id="deploy-nextjs" title="Deploy apps with Zeit"/>
-    </ul>
-  </div>
-)
+  render () {
+    return (
+      <div className='home'>
+        <style dangerouslySetInnerHTML={{ __html: stylesheet }} />
+        <h1>Todo</h1>
+        <AddTodo />
+        <TodoList />
+      </div>
+    )
+  }
+}
 
-export default defaultPage({Page})
+
+export default defaultPage({
+  Page, moduleName: 'todos', moduleReducer: todoReducer 
+})
