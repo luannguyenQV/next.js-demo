@@ -1,14 +1,23 @@
-Demo for next.js project:
-- [x] Server rendering with express js
+`next.js-demo` demo for next.js with much as much features reference from next.js Example.
+It's will be a template for a next.js project.
+
+# Demo for next.js project
+- [x] Customer server express.js
 - [x] Dynamic page
-- [ ] Integrate postCSS
-- [ ] Integrate Redux, use: `next-redux-wrapper`
+- [x] Integrated postCSS
+- [ ] Add standard js (lint/fix)
+- [ ] Integrate Redux
 - [ ] Integrate Redux-Saga
-- [ ] Todo App
-- [ ] Fetch API using isomorphic-unfetch
-- [ ] Integrate firebase
+- [ ] Integrate Redux-Form
+- [ ] Research & apply reselect for Todo App
+- [ ] Todo App (CRUD todo list)
+- [ ] Fetch API using isomorphic-unfetch/axios
+- [ ] Research & Integrate firebase
 - [ ] Login/Logout
-- [ ] reselect
-- [ ] axios vs isomorphic-unfetch
-- [ ] Ract form
+- [ ] Social Login (facebook/google/twitter)
 - [ ] Deploy in now
+# How to run
+
+# Deploy in now
+
+# Next plan
