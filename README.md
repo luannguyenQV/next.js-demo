@@ -3,21 +3,19 @@ It's will be a template for a next.js project.
 
 # Demo for next.js project
 - [x] Customer server express.js
-- [x] Dynamic page
 - [x] Integrated postCSS
 - [ ] Add standard js (lint/fix)
-- [ ] Integrate Redux
+- [ ] Integrate Redux (use next-redux-wrapper)
 - [ ] Integrate Redux-Saga
-- [ ] Integrate Redux-Form
 - [ ] Research & apply reselect for Todo App
 - [ ] Todo App (CRUD todo list)
 - [ ] Fetch API using isomorphic-unfetch/axios
-- [ ] Research & Integrate firebase
-- [ ] Login/Logout
-- [ ] Social Login (facebook/google/twitter)
 - [ ] Deploy in now
 # How to run
 
 # Deploy in now
+Link:
 
 # Next plan
+
+
