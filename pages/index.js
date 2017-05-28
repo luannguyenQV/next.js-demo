@@ -1,19 +1,23 @@
 import React, { Component } from 'react'
 import Link from 'next/link'
 import Head from 'next/head'
+import withRedux from 'next-redux-wrapper'
+import { createStore, combineReducers, bindActionCreators } from 'redux'
+import defaultPage from '../src/common/hocs/defaultPage'
 import todoReducer from '../src/modules/index/reducer'
-import { defaultPage } from '../src/common/hocs/defaultPage'
 import TodoList from '../src/modules/index/containers/TodoList'
 import AddTodo from '../src/modules/index/containers/AddTodo'
+import { initStore, addTodo } from '../src/store'
 import stylesheet from '../src/common/styles/styles.css'
 
 class Page extends Component {
+  static getInitialProps() {
+    //
+  }
 
-  render () {
+  render() {
     return (
-      <div className='home'>
-        <style dangerouslySetInnerHTML={{ __html: stylesheet }} />
-        <h1>Todo</h1>
+      <div>
         <AddTodo />
         <TodoList />
       </div>
@@ -21,7 +25,7 @@ class Page extends Component {
   }
 }
 
-
 export default defaultPage({
-  Page, moduleName: 'todos', moduleReducer: todoReducer 
+  Page, 
+  reducer: { todos: todoReducer }
 })
