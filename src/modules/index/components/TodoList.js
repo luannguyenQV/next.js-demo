@@ -1,8 +1,11 @@
+import TodoItem from '../containers/TodoItem'
+
 export default function TodoList ({ todos }) {
+  console.log('todos: ', todos)
   return (
-    <ul>
+    <ul className='todos'>
       {(todos.length > 0) && todos.map((todo, id) =>
-        <li key={id}>{todo.value}</li>
+        <TodoItem key={id} todo={todo} />
       )}
     </ul>
   )

@@ -4,6 +4,7 @@ import withRedux from 'next-redux-wrapper'
 import Link from 'next/link'
 import Head from 'next/head'
 import Header from '../widgets/Header'
+import mainStyle from '../styles/styles.css'
 
 const initStore = (reducer, initialState) => {
   const buildStore = () =>
@@ -21,7 +22,8 @@ const mainPage = (Page) => class DefaultPage extends Component {
 
   render () {
     return (
-      <div className='main'>
+      <div>
+        <style dangerouslySetInnerHTML={{ __html: mainStyle }} />
         <Page {...this.props}/>
       </div>
     )

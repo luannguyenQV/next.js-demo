@@ -1,13 +1,10 @@
 import React, { Component } from 'react'
-import Link from 'next/link'
-import Head from 'next/head'
 import withRedux from 'next-redux-wrapper'
-import { createStore, combineReducers, bindActionCreators } from 'redux'
 import defaultPage from '../src/common/hocs/defaultPage'
 import todoReducer from '../src/modules/index/reducer'
-import TodoList from '../src/modules/index/containers/TodoList'
 import AddTodo from '../src/modules/index/containers/AddTodo'
-import { initStore, addTodo } from '../src/store'
+import TodoList from '../src/modules/index/containers/TodoList'
+import Footer from '../src/modules/index/containers/Footer'
 import stylesheet from '../src/common/styles/styles.css'
 
 class Page extends Component {
@@ -17,10 +14,12 @@ class Page extends Component {
 
   render() {
     return (
-      <div>
+      <section>
+        <h1>todos</h1>
         <AddTodo />
         <TodoList />
-      </div>
+        <Footer />
+      </section>
     )
   }
 }
