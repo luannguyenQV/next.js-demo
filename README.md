@@ -1,5 +1,6 @@
 `next.js-demo` demo for next.js with much as much features reference from next.js Example.
 It's will be a template for a next.js project.
+https://nextjs-todo-zfbjjradzv.now.sh/
 
 # Demo for next.js project
 - [x] Customer server express.js
@@ -31,7 +32,7 @@ npm run start
 ```
 
 # Deploy in now
-Link:
+Link: https://nextjs-todo-zfbjjradzv.now.sh/
 
 # Next plan
 - Integrated user account
