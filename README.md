@@ -1,5 +1,5 @@
 `next.js-demo` demo for next.js with much as much features reference from next.js Example.
-It's will be a template for a next.js project.
+It's will be a template for a next.js project.  
 https://nextjs-todo-zfbjjradzv.now.sh/
 
 # Demo for next.js project
@@ -8,8 +8,8 @@ https://nextjs-todo-zfbjjradzv.now.sh/
 - [ ] Add standard js (lint/fix)
 - [x] Integrate Redux (use next-redux-wrapper)
 - [ ] Apply reselect for Todo App
-- [x] Todo App (CRUD todo list)
-- [ ] Deploy in now
+- [x] Todo App (CRUD todo list) - Applied Redux, Reselect
+- [x] Deploy in now
 # How to run
 ```
 git clone https://github.com/luannguyenQV/next.js-demo.git  
